@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="483.0" prefWidth="381.0" styleClass="backgroundColor" stylesheets="@background.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicplayer.PlaylistController">
+   <children>
+      <Button fx:id="deleteButton" layoutX="201.0" layoutY="436.0" mnemonicParsing="false" onAction="#deleteSongHandler" prefHeight="27.0" prefWidth="57.0" style="-fx-cursor: HAND;" styleClass="backgroundColor" stylesheets="@menuBackGround.css" text="Delete" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="278.0" layoutY="436.0" mnemonicParsing="false" onAction="#SwitchSceneHandler" prefHeight="27.0" prefWidth="57.0" style="-fx-cursor: HAND;" styleClass="backgroundColor" stylesheets="@background.css" text="Cancel" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="openButton" layoutX="53.0" layoutY="436.0" mnemonicParsing="false" onAction="#getSongHandler" prefHeight="27.0" prefWidth="57.0" style="-fx-cursor: HAND;" styleClass="backgroundColor" stylesheets="@menuBackGround.css" text="Open" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
+      <ListView fx:id="listViewer" layoutX="76.0" layoutY="98.0" prefHeight="269.0" prefWidth="230.0" styleClass="backgroundColor" stylesheets="@menuBackGround.css" />
+      <Button fx:id="saveButton" layoutX="127.0" layoutY="436.0" mnemonicParsing="false" onAction="#savePlaylistHandler" prefHeight="27.0" prefWidth="57.0" style="-fx-cursor: HAND;" styleClass="backgroundColor" stylesheets="@background.css" text="Save" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
