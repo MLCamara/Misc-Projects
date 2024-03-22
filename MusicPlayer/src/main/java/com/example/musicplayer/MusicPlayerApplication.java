@@ -14,8 +14,6 @@ import java.io.IOException;
 public class MusicPlayerApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-
-
         FXMLLoader fxmlLoader = new FXMLLoader(MusicPlayerApplication.class.getResource("MusicPlayer.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 381, 525);
         MusicPlayerController controller = fxmlLoader.getController();

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" onMouseMoved="#move" prefHeight="784.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Pong.PongController">
+   <children>
+      <AnchorPane fx:id="scene" style="-fx-background-color: BLACK;" VBox.vgrow="ALWAYS">
+         <children>
+            <Circle fx:id="circle" centerX="2.0" centerY="2.0" fill="WHITE" layoutX="470.0" layoutY="350.0" radius="15.0" stroke="BLACK" translateY="40.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <Rectangle fx:id="lPong" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="106.0" layoutX="14.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="20.0" AnchorPane.leftAnchor="14.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="rPong" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="106.0" layoutX="616.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" translateY="5.0" width="20.0" AnchorPane.rightAnchor="14.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Rectangle>
+            <Label fx:id="lScoreLabel" alignment="CENTER" layoutX="252.0" layoutY="35.0" prefHeight="56.0" prefWidth="200.0" text="0" textFill="WHITE" AnchorPane.leftAnchor="252.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font name="MICRCHECK" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="rScoreLabel" alignment="CENTER" layoutX="472.0" layoutY="35.0" prefHeight="56.0" prefWidth="200.0" text="0" textFill="WHITE" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font name="MICRCHECK" size="31.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</VBox>
